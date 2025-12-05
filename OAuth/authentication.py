@@ -89,7 +89,7 @@ async def get_valid_access_token():
     }
 
     save_tokens(new_tokens)
-    print("🔄 New access token saved.")
+    print("New access token saved.")
 
     return new_tokens["access_token"]
 # -----------------------------------------------------
@@ -148,7 +148,7 @@ async def google_callback(request):
     # Store everything
     save_tokens(tokens)
 
-    return PlainTextResponse("🎉 Login Successful!\nTokens saved in tokens.json")
+    return PlainTextResponse("Login Successful!\nTokens saved in tokens.json")
 
 
 # -----------------------------------------------------
